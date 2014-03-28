@@ -7,7 +7,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
 
-<util:list id="emailss" list-class="java.util.ArrayList">
+<util:list id="emails" list-class="java.util.ArrayList">
     <value>pechorin@hero.org</value>
     <value>raskolnikov@slums.org</value>
     <value>stavrogin@gov.org</value>
@@ -18,7 +18,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	<bean id ="user" class="com.bean.springExemple.User"> 
 			<property name="firstName" value="Zguiouar"></property>
 			<property name="lastName" value="Youssef"></property>
-			<property name="email"  ref="emailss"></property>
+			<property name="email"  ref="email"></property>
 	</bean>
 	
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 
 public class User {
-	
+	//youssef
 	String firstName  = null;
 	String lastName = null;
 	List<String> email = null;
@@ -14,6 +14,12 @@ public class User {
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
+	}
+	public List<String> getEmail() {
+		return email;
+	}
+	public void setEmail(List<String> email) {
+		this.email = email;
 	}
 	public String getLastName() {
 		return lastName;
