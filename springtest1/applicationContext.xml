@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+
+<util:list id="emailss" list-class="java.util.ArrayList">
+    <value>pechorin@hero.org</value>
+    <value>raskolnikov@slums.org</value>
+    <value>stavrogin@gov.org</value>
+    <value>porfiry@gov.org</value>
+</util:list>
+
+
+	<bean id ="user" class="com.bean.springExemple.User"> 
+			<property name="firstName" value="Zguiouar"></property>
+			<property name="lastName" value="Youssef"></property>
+			<property name="email"  ref="emailss"></property>
+	</bean>
+	
+
+</beans>
